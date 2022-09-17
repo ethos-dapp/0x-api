@@ -78,6 +78,7 @@
         "env-cmd": "^10.1.0",
         "eslint": "^8.23.0",
         "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-0x-api": "file:./eslint-0x-api",
         "make-promises-safe": "^5.1.0",
         "mocha": "^6.2.2",
         "msw": "^0.44.2",

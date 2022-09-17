@@ -11,7 +11,7 @@
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "plugins": ["@typescript-eslint"],
+    "plugins": ["@typescript-eslint", "0x-api"],
     "ignorePatterns": [
         "migrations/*",
         "generated-wrappers/**/*",
@@ -25,6 +25,7 @@
             {
                 "argsIgnorePattern": "^_"
             }
-        ]
+        ],
+        "0x-api/address-lowercase": 2
     }
 }
