@@ -8,6 +8,17 @@ services:
             VERSION: 8.0.1
             CHAIN_ID: 1337
             NETWORK_ID: 1337
+    0x-api:
+        build:
+            dockerfile: Dockerfile
+            context: .
+        env_file: .env
+        command: yarn start
+        ports:
+          - 3000:3000
+        depends_on:
+            - postgres
+            
     postgres:
         image: postgres:9.6
         environment:
